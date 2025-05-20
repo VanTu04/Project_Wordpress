@@ -1,7 +1,6 @@
 services:
   database:
-    # We use a mariadb image which supports both amd64 & arm64 architecture
-    image: mariadb:latest
+    image: mysql:latest
     restart: unless-stopped
     ports:
       - '${DB_PORT}:3306'
